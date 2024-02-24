@@ -10,7 +10,8 @@
 
 body {
     font-family: Nunito, sans-serif;
-    background-color: #FFFFFB;
+    /*background-color: #FFFFFB;*/
+    background-color: rgba(235, 168, 177, 0.75);
 }
 
 .content {
@@ -22,7 +23,8 @@ body {
     height: 100%;
     position: absolute;
     right: 0;
-    background-color: #F8F8FA;
+    background-color: rgba(192, 112, 124, 0.75);
+    /*background-color: #F8F8FA;*/
     z-index: -1;
 }
 
@@ -80,7 +82,8 @@ body {
 }
 
 .form__span {
-    color: #C6C6C4;
+    color: #710840;
+    /*color: #C6C6C4;*/
     font-size: 16px;
 }
 
