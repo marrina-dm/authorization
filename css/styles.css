@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url("../fonts/Nunitobold.woff");
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    background-color: #FFFFFB;
+}
+
+.content {
+    position: relative;
+}
+
+.block {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color: #F8F8FA;
+    z-index: -1;
+}
+
+.header {
+    padding: 27px 0 56px 0;
+    text-align: center;
+    font-size: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo__image {
+    width: 262px;
+}
+
+.main {
+    padding: 56px 0 191px 0;
+}
+
+.main__container {
+    padding: 0 46px 0 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__authorization {
+    max-width: 452px;
+}
+
+.main__title {
+    color: #000;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 14px;
+}
+
+.main__text {
+    color: #636363;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 69px;
+}
+
+.form {
+    margin-bottom: 44px;
+    display: grid;
+}
+
+.form__label {
+    margin-bottom: 20px;
+}
+
+.form__span {
+    color: #C6C6C4;
+    font-size: 16px;
+}
+
+.form__input {
+    color: #323232;
+    font-size: 20px;
+    outline: none;
+    padding: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #C6C6C4;
+    line-height: 27px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.checkbox {
+    margin-top: 10px;
+    font-size: 0;
+}
+
+.checkbox__input {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.checkbox__span {
+    vertical-align: middle;
+    color: #636363;
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 40px;
+    background: #DD3142;
+    width: 210px;
+    border: 0;
+    padding: 25px;
+    color: #FFF;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    justify-self: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.main__action {
+    text-align: center;
+}
+
+.action_link {
+    color: #636363;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: calc(50% - 116px);
+    left: calc(50% - 260px);
+    text-align: center;
+    max-width: 520px;
+    border-radius: 30px;
+    border: 1px solid #C6C6C4;
+    padding: 25px;
+    background-color: #F8F8FA;
+    box-sizing: border-box;
+}
+
+.popup__text {
+    color: #636363;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
