@@ -7,6 +7,7 @@ window.onload = () => {
     let popup = document.getElementById('popup');
     let formLink = document.getElementById('form-link');
 
+    // Запрещено вводить цифры
     fullNameInput.onkeydown = function (e) {
         let number = parseInt(e.key);
         if (!isNaN(number)) {
