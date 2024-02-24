@@ -1,3 +1,5 @@
+'use strict';
+
 window.onload = () => {
     let fullNameInput = document.getElementById('full-name');
     let usernameInput = document.getElementById('username');
