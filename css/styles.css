@@ -23,8 +23,7 @@ body {
     height: 100%;
     position: absolute;
     right: 0;
-    background-color: rgba(192, 112, 124, 0.75);
-    /*background-color: #F8F8FA;*/
+    background-color: #F8F8FA;
     z-index: -1;
 }
 
