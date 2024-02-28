@@ -10,9 +10,8 @@
 
 body {
     font-family: Nunito, sans-serif;
-    /*background-color: #FFFFFB;*/
-    background-color: rgba(235, 168, 177, 0.75);
     font-weight: 400;
+    background-color: #FFFFFB;
 }
 
 .content {
