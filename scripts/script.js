@@ -104,4 +104,5 @@ window.onload = function () {
     }
 
     formLink.addEventListener('click', pageLogin);
+    console.log("Hello");
 }
