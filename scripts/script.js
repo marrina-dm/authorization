@@ -1,4 +1,4 @@
-window.onload = () => {
+window.onload = function () {
     let fullNameInput = document.getElementById('full-name');
     let usernameInput = document.getElementById('username');
     let passwordInput = document.getElementById('password');
