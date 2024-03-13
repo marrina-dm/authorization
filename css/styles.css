@@ -10,8 +10,8 @@
 
 body {
     font-family: Nunito, sans-serif;
-    /*background-color: #FFFFFB;*/
-    background-color: rgba(235, 168, 177, 0.75);
+    font-weight: 400;
+    background-color: #FFFFFB;
 }
 
 .content {
@@ -23,15 +23,14 @@ body {
     height: 100%;
     position: absolute;
     right: 0;
-    background-color: rgba(192, 112, 124, 0.75);
-    /*background-color: #F8F8FA;*/
+    background-color: #F8F8FA;
     z-index: -1;
 }
 
 .header {
     padding: 27px 0 56px 0;
     text-align: center;
-    font-size: 0;
+    /*font-size: 0;*/
 }
 
 .container {
@@ -59,7 +58,7 @@ body {
 }
 
 .main__title {
-    color: #000;
+    color: #000000;
     font-size: 36px;
     line-height: 49px;
     margin-bottom: 14px;
@@ -82,8 +81,7 @@ body {
 }
 
 .form__span {
-    color: #710840;
-    /*color: #C6C6C4;*/
+    color: #C6C6C4;
     font-size: 16px;
 }
 
@@ -97,6 +95,11 @@ body {
     line-height: 27px;
     font-weight: 700;
     width: 100%;
+}
+
+.form__error {
+    color: red;
+    display: none;
 }
 
 .checkbox {
@@ -123,7 +126,7 @@ body {
     width: 210px;
     border: 0;
     padding: 25px;
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 20px;
     line-height: 1;
     text-align: center;
