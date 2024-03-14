@@ -13,8 +13,7 @@ $(document).ready(function () {
 
     signUpButton.click(function (font, text) {
         let hasError = false;
-        error.hide();
-        formInput.css('border-bottom-color', '#C6C6C4');
+        resetErrors();
         agreeCheckbox.next().css('color', '#636363');
 
         if (!fullNameInput.val().match(/^[a-z\s]+$/i)) {
@@ -95,13 +94,14 @@ $(document).ready(function () {
         $('#label-checkbox').remove();
         formLink.text('Registration');
         signUpButton.text('Sign In');
+        resetErrors();
+        formInput.val('');
 
         formLink.unbind().click(() => location.reload());
 
         signUpButton.unbind().click(function () {
             let hasError = false;
-            error.hide();
-            formInput.css('border-bottom-color', '#C6C6C4');
+            resetErrors();
 
             let client = $.grep(getClients(), function(n){
                 return n.username === usernameInput.val();
@@ -142,12 +142,12 @@ $(document).ready(function () {
     function personPage(client) {
         $('.main__title').text(`Welcome, ${client.fullName}!`);
         signUpButton.text('Exit');
-
-        signUpButton.unbind().click(() => location.reload());
         $('.main__text').remove();
         formLink.remove();
         $('#label-username').remove();
         $('#label-password').remove();
+
+        signUpButton.unbind().click(() => location.reload());
     }
 
     function getClients() {
@@ -159,5 +159,10 @@ $(document).ready(function () {
         }
 
         return clientsArray;
+    }
+
+    function resetErrors() {
+        error.hide();
+        formInput.css('border-bottom-color', '#C6C6C4');
     }
 });
